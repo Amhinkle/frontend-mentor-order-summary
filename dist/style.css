@@ -1,0 +1,145 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.125rem;
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  background-position: center top;
+  transition: 200ms ease-in-out;
+}
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    transition: 200ms ease-in-out;
+  }
+}
+
+a {
+  color: #7280a7;
+  cursor: pointer;
+}
+a.change {
+  color: #1f2f56;
+  transition: 300ms ease-in-out;
+}
+a.change:hover {
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+  color: #3829e0;
+  opacity: 80%;
+}
+a.cancel {
+  text-decoration: none;
+  font-weight: 700;
+  transition: 300ms ease-in-out;
+}
+a.cancel:hover {
+  color: black;
+  transition: 300ms ease-in-out;
+}
+
+.card__order {
+  max-width: 450px;
+  margin: 2em auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card__header {
+  color: #1f2f56;
+  font-size: 1.35rem;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.card__description {
+  color: #7280a7;
+  text-align: center;
+  padding-bottom: 25px;
+  line-height: 1.75rem;
+}
+
+.card__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 25px;
+  width: 365px;
+  height: 100px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+
+.card__plan {
+  display: flex;
+}
+
+.card__plantxt h2 {
+  font-size: 1.125rem;
+  font-weight: 900;
+  padding-left: 25px;
+}
+.card__plantxt p {
+  font-size: 1.125rem;
+  padding-left: 25px;
+}
+
+.card__link {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding-left: 50px;
+  text-decoration: none;
+}
+
+.card__payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.card__payment button {
+  display: flex;
+  width: 362px;
+  height: 57px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #3829e0;
+  color: white;
+  font-weight: 700;
+  border: none;
+  box-shadow: 5px 20px 12px #e0e8ff;
+  cursor: pointer;
+}
+.card__payment button:hover {
+  opacity: 65%;
+  transition: 250ms ease-in-out;
+}
+
+.cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
+  color: #7280a7;
+}/*# sourceMappingURL=style.css.map */

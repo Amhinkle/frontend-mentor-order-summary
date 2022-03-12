@@ -1,0 +1,164 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+  
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: $paleBlue;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: $fontBody;
+    min-height: 100vh;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $paleBlue;
+    background-position: center top;
+    transition: 200ms ease-in-out;
+
+    @media only screen and (min-width: 992px) {
+        background-image: url(/images/pattern-background-desktop.svg);
+        transition: 200ms ease-in-out;
+    }
+}
+
+// Links
+
+a{
+    color: $desaturatedBlue;
+    cursor: pointer;
+    &.change{
+        color: $darkBlue;
+        transition: 300ms ease-in-out;
+        
+        &:hover{
+            text-decoration: none;
+            transition: 300ms ease-in-out;
+            color: $brightBlue;
+            opacity: 80%;
+        }
+    }
+
+    &.cancel{
+        text-decoration: none;
+        font-weight: $weightOther;
+        transition: 300ms ease-in-out;
+
+        &:hover{
+            color: black;
+            transition: 300ms ease-in-out;
+        }
+    }
+}
+
+// Card
+.card__order{
+    max-width: 450px;
+    margin: 2em auto;
+    background: $white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card__header{
+    color: $darkBlue;
+    font-size: $fontHeader;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.card__description{
+    color: $desaturatedBlue;
+    text-align: center;
+    padding-bottom: 25px;
+    line-height: 1.75rem;
+}
+
+.card__box{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: $veryPaleBlue;
+    border-radius: 25px;
+    width: 365px;
+    height: 100px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.card__plan{
+    display: flex;
+}
+
+.card__plantxt{
+    
+
+    h2{
+        font-size: $fontOther;
+        font-weight: $weightHeader;
+        padding-left: 25px;
+    }
+
+    p{
+        font-size: $fontOther;
+        padding-left: 25px;
+    }
+
+}
+
+.card__link{
+    display: flex;
+    margin-top: 1rem;
+    font-size: $fontLink;
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+
+
+// Button
+
+.card__payment {
+
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+
+        button{
+            display: flex; 
+            width: 362px;
+            height: 57px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            font-size: $fontLink;
+            background-color: $brightBlue;
+            color: $white;
+            font-weight: $weightOther;
+            border: none;
+            box-shadow: 5px 20px 12px $paleBlue;
+            cursor: pointer;
+        &:hover{
+            opacity: 65%;
+            transition: 250ms ease-in-out;
+        }
+    }
+}
+
+.cancel{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+    color: $desaturatedBlue;
+}
+
+
